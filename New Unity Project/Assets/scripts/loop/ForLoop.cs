@@ -3,14 +3,14 @@ using System.Collections;
 
 public class ForLoop : MonoBehaviour
 {
-    int numEnemies = 3;
+    int numDogs = 4;
 
 	// Use this for initialization
 	void Start ()
     {
-        for (int i = 0; i < numEnemies; i++)
+        for (int i = 0; i < numDogs; i++)
         {
-            Debug.Log("Creating enemy number: " + i);
+            Debug.Log("Creating dog number: " + i);
         }
 	
 	}

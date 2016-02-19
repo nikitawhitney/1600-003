@@ -3,15 +3,15 @@ using System.Collections;
 
 public class WhileLoop : MonoBehaviour
     {
-    int cupsInTheSink = 4;
+    int chipsInTheBag = 5;
 
 	// Use this for initialization
 	void Start ()
     {
-        while(cupsInTheSink > 0)
+        while(chipsInTheBag > 0)
         {
-            Debug.Log("I've washed a cup!");
-                cupsInTheSink--;
+            Debug.Log("I ate a chip");
+                chipsInTheBag--;
         }	
 	}
 	

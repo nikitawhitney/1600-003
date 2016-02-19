@@ -3,7 +3,7 @@ using System.Collections;
 
 public class IFStatement : MonoBehaviour
 {
-    public float coffeeTemperature = 45.0f;
+    public float coffeeTemperature = 50.0f;
     public float hotLimitTemperature = 35.0f;
     public float coldLimitTemperature = 25.0f;
 

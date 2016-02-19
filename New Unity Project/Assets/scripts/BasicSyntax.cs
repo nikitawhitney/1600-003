@@ -9,7 +9,7 @@ public class BasicSyntax : MonoBehaviour {
         Debug.Log(transform.position.x);
         if(transform.position.y <= 7f)
         {
-            Debug.Log("I'm about to hit the ground!");
+            Debug.Log("I'm going to die!");
         }
 	}
 	
