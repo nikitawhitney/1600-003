@@ -3,7 +3,7 @@ using System.Collections;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public int startingHealth = 100;
+    public int startingHealth = 50;
     public int currentHealth;
     public float sinkSpeed = 2.5f;
     public int scoreValue = 10;
