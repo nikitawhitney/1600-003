@@ -23,19 +23,19 @@ public class PlayerMovement : MonoBehaviour
 	
 	void FixedUpdate ()
     {
-        float up = Input.GetAxisRaw("Horizontal");
-        float down = Input.GetAxisRaw("Vertical");
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
 
-        Move (up, down);
+        Move (h, v);
 
         Turning();
 
-        Animating(up, down);
+        Animating(h, v);
 	}
 
-    void Move (float up, float down)
+    void Move (float h, float v)
     {
-        movement.Set(up, 0f, down);
+        movement.Set(h, 0f, v);
 
         movement = movement.normalized * speed * Time.deltaTime;
 
@@ -61,9 +61,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
     
-    void Animating (float up, float down)
+    void Animating (float h, float v)
     {
-        bool walking = up != 0f || down != 0f;
+        bool walking = h != 0f || v != 0f;
 
         anim.SetBool("IsWalking", walking);
     }
