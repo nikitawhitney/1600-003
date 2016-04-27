@@ -4,6 +4,8 @@ using System.Collections;
 public class EnemyMovement : MonoBehaviour
 {
     Transform player;
+    PlayerHealth playerHealth;
+    EnemyHealth enemyHealth;
 
     NavMeshAgent nav;
 
@@ -11,7 +13,8 @@ public class EnemyMovement : MonoBehaviour
 	void Awake ()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-
+        playerHealth = player.GetComponent<PlayerHealth>();
+        enemyHealth = GetComponent<EnemyHealth>();
         nav = GetComponent<NavMeshAgent>();
 	
 	}
@@ -19,6 +22,15 @@ public class EnemyMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        nav.SetDestination(player.position);	
+       if(enemyHealth.currentHealth> 0 && playerHealth.currentHealth> 0)
+        {
+            nav.SetDestination(player.position);
+        }
+
+        else
+        {
+            nav.enabled = false;
+        }
 	}
+
 }

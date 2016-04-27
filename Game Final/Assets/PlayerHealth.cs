@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour
     public Color flashColor = new Color(1f, 0f, 0f, 0.1f);
     Animator anim;
     PlayerMovement playerMovement;
-    //PlayerShooting playerShooting;
+    PlayerShooting playerShooting;
     bool isDead;
     bool damaged;
 
@@ -21,7 +21,7 @@ public class PlayerHealth : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
-        //playerShooting = GetComponentInChildren <PlayerShooting>();
+        playerShooting = GetComponentInChildren <PlayerShooting>();
         currentHealth = startingHealth;
     }
 	
@@ -60,10 +60,10 @@ public class PlayerHealth : MonoBehaviour
     {
         isDead = true;
 
-        //playerShooting.DisableEffects ();
+        playerShooting.DisableEffects ();
         anim.SetTrigger("Die");
 
         playerMovement.enabled = false;
-        //playerShooting.enabled = false;
+        playerShooting.enabled = false;
     }
 }
