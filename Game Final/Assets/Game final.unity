@@ -251,7 +251,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9cc52a258e82a754abef0f48ee8e199c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.14
+      value: 9.69
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9cc52a258e82a754abef0f48ee8e199c, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2258,6 +2258,7 @@ GameObject:
   - 225: {fileID: 1788644292}
   - 95: {fileID: 1788644297}
   - 114: {fileID: 1788644298}
+  - 114: {fileID: 1788644299}
   m_Layer: 5
   m_Name: HUDCanvas
   m_TagString: Untagged
@@ -2379,6 +2380,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 291dccc561f94e9408e2d59f6d922d6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1788644299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1788644291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90a091e5f36d34d488e0eb8b25feee15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1953419870}
